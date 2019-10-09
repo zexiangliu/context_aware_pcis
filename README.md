@@ -17,5 +17,5 @@ addpath(genpath('takeover'));
 
 ### Thrid-party libraries
 
-- MPT3 [project webpage](https://www.mpt3.org/)
-- A fast minHRep implementation [github](https://github.com/mageecoe/indicate_nonredundant_halfplanes)
+- MPT3 [(project webpage)](https://www.mpt3.org/)
+- A fast minHRep implementation [(github)](https://github.com/mageecoe/indicate_nonredundant_halfplanes)
