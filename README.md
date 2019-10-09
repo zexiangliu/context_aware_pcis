@@ -13,7 +13,7 @@ addpath(genpath('takeover'));
 ```
 ### Usage
 
-*To turn on/off the fast minHRep (but not stable) implementation, go to `pcis/lib/minHRep2.m` and change the flag according to the comments in line 11-12.*
+*To turn on/off the fast (but less stable) minHRep implementation, go to `pcis/lib/minHRep2.m` and change the flag according to the comments in line 11-12.*
 
 ### Thrid-party libraries
 
