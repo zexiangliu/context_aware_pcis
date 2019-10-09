@@ -13,6 +13,8 @@ addpath(genpath('takeover'));
 ```
 ### Usage
 
+Generate PCIS with bounded velocity model: run `takeover/takeover_expand.m`.
+
 *To turn on/off the fast (but less stable) minHRep implementation, go to `pcis/lib/minHRep2.m` and change the flag according to the comments in line 11-12.*
 
 ### Thrid-party libraries
