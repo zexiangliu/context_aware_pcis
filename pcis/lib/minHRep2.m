@@ -13,7 +13,7 @@ function C_min = minHRep2(C,checked_ind)
 %     method = 1; % debuging mode
 
     if method == 1
-        try
+%         try
             if any(C.b < 0)
                 z = mean(C.V,1)';
                 [A,b,ind_min] = indicate_nonredundant_halfplanes(C.A,C.b,checked_ind,z);
@@ -23,11 +23,11 @@ function C_min = minHRep2(C,checked_ind)
 
 %             C_min = Polyhedron('A',A,'b',b);
             C_min = Polyhedron('A',C.A(ind_min,:),'b',C.b(ind_min));
-        catch ME
-            disp("minHRep2 fails with the following error:");
-            disp(ME.message);
-            C_min = C.minHRep;
-        end
+%         catch ME
+%             disp("minHRep2 fails with the following error:");
+%             disp(ME.message);
+%             C_min = C.minHRep;
+%         end
     elseif method == 2
         C_min = C.minHRep;
     elseif method == 3

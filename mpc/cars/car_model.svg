@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="397"
+   version="1.1"
+   viewBox="0 0 800 397"
+   id="svg24"
+   sodipodi:docname="car_model.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs28">
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient2891">
+      <stop
+         id="stop2887"
+         offset="0"
+         style="stop-color:#4bbe00;stop-opacity:1;" />
+      <stop
+         style="stop-color:#25a802;stop-opacity:0.49803922;"
+         offset="0.45989233"
+         id="stop2893" />
+      <stop
+         id="stop2889"
+         offset="1"
+         style="stop-color:#009304;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2853"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2851" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2845"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2843" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient847-7-5-8">
+      <stop
+         id="stop1404"
+         offset="0"
+         style="stop-color:#ff0000;stop-opacity:1;" />
+      <stop
+         id="stop1406"
+         offset="1"
+         style="stop-color:#009304;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient847-7-5-8-7"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#4bbe00;stop-opacity:1;"
+         offset="0"
+         id="stop843" />
+      <stop
+         style="stop-color:#009304;stop-opacity:0;"
+         offset="1"
+         id="stop845" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient847-7-5-8-7"
+       id="linearGradient849"
+       x1="61.53846"
+       y1="203.26781"
+       x2="211.96581"
+       y2="203.26781"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2891"
+       id="linearGradient2855"
+       x1="733.37744"
+       y1="199.85101"
+       x2="801.55539"
+       y2="198.71141"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
+     id="namedview26"
+     showgrid="false"
+     inkscape:zoom="0.8775"
+     inkscape:cx="533.57288"
+     inkscape:cy="239.92289"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g10"
+     style="fill-opacity:1;fill:url(#linearGradient849)">
+    <path
+       d="m488.03 36.601 88.53 0.19746 21.757-8.4611c49.014-3.6355 102.38-1.9675 146.59 31.122 61.684 55.112 82.001 193.65 0 281.94-60.435 36.446-129.43 37.656-166.56 23.123l-90.685-1.0344-7.321 22.117c-6.2949 11.084-16.198 8.4576-26.211 5.4131l7.9374-29.591c-60.131-11.597-120.65-15.73-182.3 1.3859-91.301 16.636-151.39-11.125-240.45-36.511-28.362-85.631-40.516-153.41 0.16444-261.04 84.426-26.494 147.85-47.288 239.15-30.652 63.571 8.8786 123.22 6.0025 182.3 1.3859l-7.9374-29.591c10.013-3.0445 19.916-5.6712 26.211 5.4131l8.8319 24.786"
+       fill="#009304"
+       stroke="#000"
+       stroke-width="5"
+       id="path4"
+       style="fill-opacity:1;fill:url(#linearGradient2855)" />
+    <path
+       d="m741.08 59.459h-20.286l40.171 56.629h19.373c-13.093-28.475-17.672-36.631-39.258-56.629z"
+       fill="#faff04"
+       stroke="#fffeff"
+       stroke-width="1px"
+       id="path6"
+       style="fill-opacity:1.0;fill:#ffff04" />
+    <path
+       d="m742.38 339.62-22.905 0.40291 40.171-56.629h19.373c-13.093 28.475-15.053 36.228-36.639 56.226z"
+       fill="#faff04"
+       stroke="#fffeff"
+       stroke-width="1px"
+       id="path8"
+       style="fill-opacity:1.0;fill:#ffff04" />
+  </g>
+  <g
+     id="g18">
+    <path
+       d="m443.2 102.07c23.408-20.885 90.488-31.033 123.29-36.262 41.291 84.813 53.975 181.62-4.3787 268.77-35.219-5.9096-101.87-19.658-121.13-38.309v-195.81"
+       stroke="#000"
+       stroke-width="1px"
+       id="path12"
+       style="fill-opacity:1;fill:#000000" />
+    <circle
+       cx="532.65"
+       cy="328.51"
+       r="1.5"
+       id="circle14" />
+    <path
+       d="m178.59 102.27c-33.732 83.149-6.3444 147.9 4.4216 202.86-25.548-0.59184-54.722-11.926-80.269-18.932-14.47-56.545-23.721-113.52 0-173.25 11.892-8.0553 39.687-20.92 81.489-22.764"
+       stroke="#000"
+       stroke-width="1px"
+       id="path16" />
+  </g>
+  <path
+     d="m209.69 83.61 272.93-25.641-234.76-0.5698z"
+     fill="#000004"
+     stroke="#f00"
+     stroke-width="1px"
+     id="path20"
+     style="stroke:none" />
+  <path
+     d="m210.14 314.68 272.93 25.641-234.76 0.5698z"
+     fill="#000004"
+     stroke="#f00"
+     stroke-width="1px"
+     id="path22"
+     style="stroke:none" />
+</svg>
