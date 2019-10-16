@@ -19,7 +19,7 @@
 clear;close all;clc;
 con = constants_tri();
 % Get Dynamics
-dyn_conserv = get_dyn_bdd_vel();
+dyn_conserv = get_dyn_bdd_vel2();
 mptopt('lpsolver', 'GUROBI', 'qpsolver', 'GUROBI');
 
 %% Create Safe Set and Small Invariant Set
