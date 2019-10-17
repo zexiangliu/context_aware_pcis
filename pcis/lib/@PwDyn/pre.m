@@ -16,13 +16,23 @@ function [preSets] = pre( varargin )
 	X = varargin{2};
 	rho = varargin{3};
 
-	plot_flag = false;
+	plot_flag = 0;
 
 	if nargin >= 4
-		for ind = 4:nargin
-			switch varargin{ind}
+        arg_idx = 4;
+        while arg_idx <= nargin
+			switch varargin{arg_idx}
 				case 'plot_stuff'
-					plot_flag = true;
+                    if nargin == arg_idx
+                        plot_flag = 1;
+                        arg_idx = arg_idx + 1;
+                    elseif isnumeric(varargin{arg_idx+1})
+                        plot_flag = varargin{arg_idx+1};
+                        arg_idx = arg_idx + 2;
+                    else
+                        plot_flag = 1;
+                        arg_idx = arg_idx + 1;
+                    end
                     figure;
 				otherwise
 					error(['Unrecognized input: ' varargin{ind} ])
@@ -35,14 +45,20 @@ function [preSets] = pre( varargin )
         %each element in its 'Sets'.
         temp_preSets = cell(X.Num,1);
         for ind_X = 1:X.Num
-            temp_preSets{ind_X} = pwd1.pre(X.Set(ind_X),rho);
+            temp_preSets{ind_X} = pwd1.pre(X.Set(ind_X),rho,'plot_stuff',plot_flag);
         end
         %After all is said and done, combine the polyUnions.
         all_sets = [];
         for ind_X = 1:length(temp_preSets)
             all_sets = [all_sets temp_preSets{ind_X}.Set ];
-        end 
-        preSets = PolyUnion(all_sets);
+        end
+        
+        if ~isempty(all_sets)
+            preSets = PolyUnion(all_sets);
+        else
+            warning('Pre contained only empty sets?')
+            preSets = [];
+        end
         
     elseif isa(X,'Polyhedron')
 
@@ -53,7 +69,7 @@ function [preSets] = pre( varargin )
             pre_from_dyn_i = pwd1.reg_list{i}.intersect(pwd1.dyn_list{i}.pre_proj(X, rho));
             % S = add1(S, new_poly);
 %             pre_from_dyn_i.isEmptySet
-            if plot_flag
+            if plot_flag > 1
                 hold on;
                 plot(pwd1.domain.projection([2 3]),'color','blue')
                 plot(X.projection([2 3]),'color','magenta')

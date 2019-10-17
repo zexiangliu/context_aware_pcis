@@ -1,5 +1,8 @@
-function [ dyn0 ] = get_dyn_bdd_vel()
+function [ dyn0 ] = get_dyn_bdd_vel(varargin)
 % get_dyn_bdd_vel.m
+%
+%Usage:
+%	dyn_3d = get_dyn_bdd_vel()
 
 %% Constants
 

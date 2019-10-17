@@ -25,7 +25,7 @@ V0 = varargin{3};
 rhoPre = varargin{4};
 
 %Assign defaults to the extra variables.
-plot_stuff = false;
+plot_flag = 0;
 debug_flag = false;
 max_iter = Inf;
 
@@ -33,8 +33,16 @@ arg_ind = 5;
 while arg_ind <= nargin
     switch varargin{arg_ind}
     case 'plot_stuff'
-        plot_stuff = true;
-        arg_ind = arg_ind + 1;
+        if nargin == arg_ind
+            plot_flag = 1;
+            arg_ind = arg_ind + 1;
+        elseif isnumeric(varargin{arg_ind+1})
+            plot_flag = varargin{arg_ind+1};
+            arg_ind = arg_ind + 2;
+        else
+            plot_flag = 1;
+            arg_ind = arg_ind + 1;
+        end
     case 'debug'
         debug_flag = true;
         arg_ind = arg_ind + 1;
@@ -58,7 +66,7 @@ if isa(V,'Polyhedron')
     V = PolyUnion(V);
 end
 
-if plot_stuff
+if plot_flag > 0
     fig = figure;
     fig2 = figure;
 end
@@ -70,11 +78,16 @@ pre_V = V.copy;
 while(1)
     counter = counter + 1;
     
-    if debug_flag
+    if debug_flag 
         disp("Now doing iteration # "+num2str(iter_num));
     end
     
-    pre_V = pre(pwd0, pre_V, rhoPre);
+    pre_V = pre(pwd0, pre_V, rhoPre,'plot_stuff',plot_flag);
+
+    if isempty(pre_V)
+        break;
+    end
+
 %     V_old = V;
     pre_V = IntersectPolyUnion(Safe,pre_V);
     V.add(pre_V.Set);    
@@ -97,7 +110,7 @@ while(1)
 %     end
     
 %     fig = figure;
-    if plot_stuff
+    if plot_flag > 0
         visual2(V,fig);
         visual(V, fig2);
     end
